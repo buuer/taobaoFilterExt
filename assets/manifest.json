@@ -1,0 +1,24 @@
+{
+  "content_scripts": [
+    {
+      "js": ["./content.js"],
+      "matches": ["*://s.taobao.com/*", "*://list.tmall.com/*"]
+    }
+  ],
+  "description": "淘宝搜索过滤",
+  "icons": {
+    "128": "image/icon_128.png",
+    "16": "image/icon_16.png",
+  "64": "image/icon_64.png"
+  },
+  "manifest_version": 2,
+  "name": "淘宝搜索过滤 taobao filter",
+  "permissions": ["*://s.taobao.com/*", "*://list.tmall.com/*", "storage"],
+  "web_accessible_resources": ["image/icon_64.png"],
+  "version": "0.1.0",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "hchi404@gmail.com"
+    }
+  }
+}
